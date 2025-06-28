@@ -289,7 +289,7 @@ export function EventSettingsModal({
                 <Button
                   onClick={updateBasicInfo}
                   disabled={loading}
-                  className="bg-green-400 hover:bg-green-700"
+                  className="bg-green-600 hover:bg-green-700 text-white"
                 >
                   {loading ? "Saving..." : "Save Changes"}
                 </Button>
