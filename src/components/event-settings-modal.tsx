@@ -468,7 +468,7 @@ export function EventSettingsModal({
                     <Button
                       onClick={deleteEvent}
                       disabled={loading || deletePassword !== "oatside-pepero"}
-                      className="flex-1 bg-red-600 hover:bg-red-700"
+                      className="flex-1 bg-red-600 hover:bg-red-700 text-white"
                     >
                       {loading ? "Deleting..." : "Delete Forever"}
                     </Button>
