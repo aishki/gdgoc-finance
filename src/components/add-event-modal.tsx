@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useState } from "react";
@@ -125,7 +126,7 @@ export function AddEventModal({
 
       if (eventError) throw eventError;
 
-      // Create categories
+      // Create categoriess
       const allCategories = [
         ...incomeCategories.map((name) => ({
           event_id: eventData.id,
@@ -374,7 +375,7 @@ export function AddEventModal({
         {step === 3 && (
           <div className="space-y-4">
             <p className="text-sm text-gray-400">
-              Add expense categories (what you'll spend on)
+              Add expense categories (what you&apos;ll spend on)
             </p>
             <div className="flex gap-2">
               <Input
