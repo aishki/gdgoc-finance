@@ -103,7 +103,7 @@ export function CashFlowChart({ entries, categories }: CashFlowChartProps) {
     };
 
     requestAnimationFrame(animate);
-  }, [activeIndex]);
+  }, [activeIndex, animatedRadius]);
 
   const formatCurrency = (value: number) => {
     return `₱${value.toLocaleString("en-US", {
