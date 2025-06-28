@@ -432,7 +432,6 @@ export function BudgetTable({
                     className="border-gray-700 hover:bg-gray-800/50"
                   >
                     <TableCell
-                      className="cursor-pointer"
                       onDoubleClick={() =>
                         startEditing(entry.id, "entry_date", entry.entry_date)
                       }
@@ -464,7 +463,6 @@ export function BudgetTable({
                       </Badge>
                     </TableCell>
                     <TableCell
-                      className="cursor-pointer"
                       onDoubleClick={() =>
                         startEditing(entry.id, "item_name", entry.item_name)
                       }
@@ -484,7 +482,6 @@ export function BudgetTable({
                       )}
                     </TableCell>
                     <TableCell
-                      className="cursor-pointer"
                       onDoubleClick={() =>
                         startEditing(entry.id, "amount", entry.amount)
                       }
@@ -514,7 +511,6 @@ export function BudgetTable({
                       )}
                     </TableCell>
                     <TableCell
-                      className="cursor-pointer"
                       onDoubleClick={() =>
                         startEditing(
                           entry.id,
@@ -745,7 +741,7 @@ export function BudgetTable({
                 </Button>
                 <Button
                   onClick={() => deleteConfirm && deleteEntry(deleteConfirm)}
-                  className="bg-red-600 hover:bg-red-700"
+                  className="bg-red-600 hover:bg-red-700 text-white"
                 >
                   Delete
                 </Button>

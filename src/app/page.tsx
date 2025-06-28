@@ -129,21 +129,17 @@ export default function Dashboard() {
               value={sortBy}
               onValueChange={(value: "date" | "status") => setSortBy(value)}
             >
-              <SelectTrigger className="w-40 bg-gray-800 border-gray-700 cursor-pointer">
+              <SelectTrigger className="w-40 bg-gray-800 border-gray-700">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent className="bg-gray-800 border-gray-700">
-                <SelectItem className="cursor-pointer" value="date">
-                  Sort by Date
-                </SelectItem>
-                <SelectItem className="cursor-pointer" value="status">
-                  Sort by Status
-                </SelectItem>
+                <SelectItem value="date">Sort by Date</SelectItem>
+                <SelectItem value="status">Sort by Status</SelectItem>
               </SelectContent>
             </Select>
             <Button
               onClick={() => setIsAddModalOpen(true)}
-              className="bg-[#83aff0] hover:bg-[#4779c4] cursor-pointer"
+              className="bg-[#83aff0] hover:bg-[#4779c4] "
             >
               <Plus className="w-4 h-4 mr-0.5" />
               Add Event
@@ -183,7 +179,7 @@ export default function Dashboard() {
               </CardHeader>
               <CardContent>
                 <Link href={`/event/${event.id}`}>
-                  <div className="space-y-2 cursor-pointer">
+                  <div className="space-y-2 ">
                     <div className="flex items-center text-sm text-gray-400">
                       <MapPin className="w-4 h-4 mr-2" />
                       {event.venue || "Venue not set"}
@@ -211,7 +207,7 @@ export default function Dashboard() {
             <p className="text-gray-400 text-lg mb-4">No events found</p>
             <Button
               onClick={() => setIsAddModalOpen(true)}
-              className="bg-[#83aff0] hover:bg-[#4779c4] cursor-pointer"
+              className="bg-[#83aff0] hover:bg-[#4779c4] "
             >
               <Plus className="w-4 h-4 mr-0.5" />
               Create Your First Event

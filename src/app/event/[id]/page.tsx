@@ -190,7 +190,7 @@ export default function EventPage() {
                 {event.venue || "Venue not set"}
               </div>
               <div className="flex items-center">
-                <Calendar className="w-4 h-4 mr-1" />
+                <Calendar className="w-4 h-4 mr-1 text-white" />
                 {formatDate(event.start_date)} - {formatDate(event.end_date)}
               </div>
               <Badge className={`${statusColors[event.status]} text-white`}>
